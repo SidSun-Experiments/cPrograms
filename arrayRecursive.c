@@ -13,7 +13,7 @@ int createArray(int j,int total) {
 	printf("Size: %d\n",j); //Print the size of current array being created
 	k = (k + j);
 	printf("Total so far: %d\n",k);//'k' not 'total' that'll print last time's total excluding current one
-	t=j*j; //we're squaring it here cuz we're impatient to see the seg fault +1 would execute for longer
+	t=j+1; //we're squaring it here cuz we're impatient to see the seg fault +1 would execute for longer
 	createArray(t,k); //pass t and the current total so we can use AL&ML to calculate the next one
 	return 0;
 }
